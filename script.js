@@ -35,9 +35,9 @@ formButton.addEventListener("click", (event) => {
 
     document.getElementById("tBody").appendChild(newTableRow)
     //make sure this is in the function of the button so it actually works -_-
-    document.getElementById("firstInput")
-    document.getElementById("secondInput")
-    document.getElementById("thirdInput")
+    document.getElementById("firstInput").value = ""
+    document.getElementById("secondInput").value = ""
+    document.getElementById("thirdInput").value = ""
 
     number++
 })

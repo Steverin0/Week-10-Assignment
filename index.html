@@ -7,15 +7,10 @@
     <link rel="stylesheet" href="./node_modules\bootstrap\dist\css\bootstrap.min.css">
 </head>
 <body>
-    <table class = "table table-info table-striped">
-        <thead id="tHead">
-            <th>Assigned #</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Duty</th>
-        </thead>
-        <tbody id="tBody"></tbody>
-    </table>
+    <div class="p-3 mb-2 bg-info-subtle text-info-emphasis">
+        <h1>Volunteer Work</h1>
+    </div>
+
     <form>
         <div>
             <label for="firstInput" class="form-label">First Name</label> <!--for is what links the label to  the id-->
@@ -31,6 +26,15 @@
         </div>
         <button type="submit" class="btn btn-outline-info" id="formButton">Submit</button>
     </form>
+    <table class = "table table-info table-striped">
+        <thead id="tHead">
+            <th>Assigned #</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Duty</th>
+        </thead>
+        <tbody id="tBody"></tbody>
+    </table>
     <script src = "./node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="script.js"></script>
 </body>
