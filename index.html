@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="./node_modules\bootstrap\dist\css\bootstrap.min.css">
 </head>
 <body>
-
-    <table class = "table">
-        <thead>
-            <th>#</th>
-            <th>name</th>
-            <th>email</th>
+    <table class = "table table-info table-striped">
+        <thead id="tHead">
+            <th>Assigned #</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Duty</th>
         </thead>
+        <tbody id="tBody"></tbody>
     </table>
     <form>
-        <button type="button" class="btn btn-outline-info">Submit</button>
+        <div>
+            <label for="firstInput" class="form-label">First Name</label> <!--for is what links the label to  the id-->
+            <input type="text" class="form-control" id="firstInput"/>
+        </div>
+        <div>
+            <label for="secondInput" class="form-label">Last Name</label>
+            <input type="text" class="form-control" id="secondInput">
+        </div>
+        <div>
+            <label for="thirdInput" class="form-label">Duty</label>
+            <input type="text" class="form-control" id="thirdInput">
+        </div>
+        <button type="submit" class="btn btn-outline-info" id="formButton">Submit</button>
     </form>
     <script src = "./node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
     <script src="script.js"></script>
